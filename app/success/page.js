@@ -35,7 +35,6 @@ const page = () => {
                     <span>View Poll Results</span>
                     <FaChartPie />
                 </Link>
-                <ShareBtn />
             </div>
         </div>
     );
