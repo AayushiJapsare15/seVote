@@ -1,0 +1,3 @@
+[build]
+  command = "npm install && npm run build && next-on-netlify"
+  publish = "out" # This is where next-on-netlify will place the optimized files

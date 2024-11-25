@@ -13,7 +13,7 @@ const Footer = () => {
                      {/* Source available on <a className="text-teal-600 underline hover:brightness-125" href="https://github.com/devXprite/PollPower">GitHub</a>, give it a ⭐️! */}
                 </p>
                 <div className="flex items-center gap-2 text-sm md:text-base">
-                    <p>Language:</p>
+                    <p>Languages available:</p>
                     <TranslateButton />
                 </div>
             </div>
