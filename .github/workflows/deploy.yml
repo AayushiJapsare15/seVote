@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2  # Checks out the repository code
+        uses: actions/checkout@master  # Checks out the repository code
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@master
         with:
           node-version: '14'  # Or any other Node.js version you are using
 
@@ -28,7 +28,7 @@ jobs:
         run: npm run build  # Replace with the build command for your project
 
       - name: Deploy to Netlify
-        uses: netlify/actions/cli@v2
+        uses: netlify/actions/cli@master
         with:
           netlify_auth_token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify_site_id: ${{ secrets.NETLIFY_SITE_ID }}
