@@ -1,31 +1,29 @@
 name: Deploy to Netlify
-
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch
+      - main  
   pull_request:
     branches:
-      - main  # Trigger on pull requests to the main branch
-
+      - main  
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@master  # Checks out the repository code
+        uses: actions/checkout@master  
 
       - name: Set up Node.js
         uses: actions/setup-node@master
         with:
-          node-version: '14'  # Or any other Node.js version you are using
+          node-version: '14' 
 
       - name: Install Dependencies
-        run: npm install  # Install dependencies in your project
+        run: npm install  
 
       - name: Build Project
-        run: npm run build  # Replace with the build command for your project
+        run: npm run build  
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
