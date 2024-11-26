@@ -8,7 +8,7 @@ const Header = () => {
         <header className="gradient px-4 py-3 text-white">
             <nav className="mx-auto flex max-w-screen-xl items-center justify-between gap-4">
                 <div>
-                    <h2 className="text-base font-semibold md:text-xl" translate='no' >PollPower</h2>
+                    <h2 className="text-base font-semibold md:text-xl" translate='no' >PowerPoll</h2>
                     {/* <h2 className="text-base font-semibold md:text-xl">PowerPoll</h2> */}
                     <p className='text-[10px] md:text-xs text-primary-200 font-medium -mt-1'>Vote with Confidence</p>
                 </div>
